@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning_flutter_web/pages/containers/container1.dart';
 
 import '../common/constants.dart';
 import 'navbar.dart';
@@ -21,6 +22,7 @@ class _HomeState extends State<Home> {
           child: const Column(
             children: [
               NavBar(),
+              Container1(),
             ],
           ),
         ),

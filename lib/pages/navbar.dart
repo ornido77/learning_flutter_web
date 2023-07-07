@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learning_flutter_web/common/colors.dart';
+import 'package:learning_flutter_web/common/constants.dart';
 import 'package:learning_flutter_web/common/styles.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
@@ -15,7 +16,6 @@ class _NavBarState extends State<NavBar> {
   Widget build(BuildContext context) {
     return ScreenTypeLayout.builder(
       mobile: (context) => mobileNavBar(),
-      tablet: (context) => desktopNavBar(),
       desktop: (context) => desktopNavBar(),
     );
   }
@@ -80,7 +80,7 @@ class _NavBarState extends State<NavBar> {
       width: 110,
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('assets/images/logo.png'),
+          image: AssetImage(logo),
         ),
       ),
     );
